@@ -1,4 +1,5 @@
 // src/components/Student.jsx
+import React, { useState, useEffect } from "react";
 const StudentDashboard = ({
   studentName,
   currentPoll,

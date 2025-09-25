@@ -14,13 +14,13 @@ const io = new Server(server, {
   cors: { origin: "*" },
 });
 
-// ===== Serve frontend build =====
-const frontendPath = path.join(__dirname, "../frontend/dist");
-app.use(express.static(frontendPath));
+// // ===== Serve frontend build =====
+// const frontendPath = path.join(__dirname, "../frontend/dist");
+// app.use(express.static(frontendPath));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(frontendPath, "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(frontendPath, "index.html"));
+// });
 
 app.use(cors());
 app.use(express.json());

@@ -6,7 +6,7 @@ import TeacherDashboard from "./components/Teacher.jsx";
 import StudentDashboard from "./components/Student.jsx";
 import "./App.css";
 
-const SOCKET_URL = import.meta.env.VITE_API_URL;
+const SOCKET_URL = "http://localhost:5000";
 
 function App() {
   const [socket, setSocket] = useState(null);
