@@ -13,9 +13,7 @@ It demonstrates my skills in React, Tailwind CSS, Node.js, and Express through a
 2. [Tech Stack](#tech-stack)
 3. [Setup Instructions](#setup-instructions)
 4. [Screenshots](#screenshots)
-5. [Folder Structure](#folder-structure)
-6. [Usage](#usage)
-7. [Contact](#contact)
+   
 
 ---
 
