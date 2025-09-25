@@ -14,18 +14,8 @@ const io = new Server(server, {
   cors: { origin: "*" },
 });
 
-// Serve frontend
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
-});
-
 app.use(cors());
 app.use(express.json());
-
-// Serve frontend build
-app.use(express.static(path.join(__dirname, "../client/build")));
 
 // Data structures
 let currentPoll = null;
