@@ -14,7 +14,7 @@ const io = new Server(server, {
   cors: { origin: "*" },
 });
 
-// Serve frontend build
+// Serve frontend
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 app.get(/.*/, (req, res) => {
